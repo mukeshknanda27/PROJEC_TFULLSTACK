@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar
+{
+    height:75px; 
+    background-color: rgb(83, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+}
+.logo
+{
+    color: #f79400;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-links
+{
+    display: flex;
+    gap: 24px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Welcome
+{
+    height: 140px;
+    background-color: #f8ec03;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.Welcome-title
+{
+    color: rgba(2, 7, 90, 0.863);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.Welcome-text
+{
+    color: #150e01;
+    font-size: 20px;
+}
+.menu-section
+{
+    background-color: #a14646;
+    min-height: 475px;
+    padding: 33px 29px 29px;
+}
+.menu-heading
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #371505;
+    margin-bottom: 50px;
+}
+.coffee-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+}
+.coffee-card
+{
+     width: 185px;
+    height: 191px;
+    background-color: rgb(237, 234, 139);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+}
+.coffee-icon
+{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.coffee-name
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.coffee-description
+{
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.coffee-price
+{
+    color: #ff6a00;
+    font-size: 16px;
+    font-weight: bold;
+}
+.offer
+{
+   height: 100px;
+    background-color: #ff05e2;
+    border-radius: 8px;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #382319;
+    margin-bottom: 14px;
+}
+
+.offer-text {
+    font-size: 13px;
+}
+
+/* Footer */
+.footer {
+    height: 56px;
+    background-color: #382319;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    .coffee-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-section {
+        padding: 30px 15px;
+    }
+
+    .menu-heading {
+        margin-bottom: 30px;
+    }
+
+    .welcome-title {
+        font-size: 20px;
+    }
+
+    .offer {
+        margin-top: 30px;
+    }
+}
+
+
