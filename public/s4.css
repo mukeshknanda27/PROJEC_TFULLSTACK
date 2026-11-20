@@ -1,0 +1,302 @@
+
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eaf6ff;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #07506c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 20px;
+    color: white;
+}
+
+.logo span,
+footer span {
+    color: #ffc629;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: #ffc629;
+}
+ 
+.hero {
+    background-color: #70c5e1;
+    text-align: center;
+    padding: 65px 20px;
+    color: white;
+}
+
+.welcome {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    color: #07506c;
+    font-size: 13px;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffc629;
+    color: #07506c;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.places,
+.events {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.places h2,
+.events h2 {
+    color: #07506c;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #527184;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+ 
+.places-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.place-card {
+    background-color: white;
+    border: 2px solid #ffb800;
+    border-radius: 12px;
+    width: 190px;
+    padding: 25px 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.place-card h3 {
+    color: #f0a900;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.place-card h4 {
+    color: #07506c;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.place-card p {
+    color: #527184;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.place-card a {
+    display: inline-block;
+    background-color: #ffc629;
+    color: #07506c;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+ 
+.highlights {
+    background-color: #106b8d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+
+.highlights h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.highlights > p {
+    font-size: 12px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.stat h3 {
+    color: #ffc629;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.stat p {
+    font-size: 12px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border: 2px solid #75d0f5;
+    border-radius: 12px;
+    width: 220px;
+    padding: 25px 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    color: #e9a900;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.event-card h4 {
+    color: #07506c;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    color: #527184;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.event-card small {
+    color: #70a7bd;
+    font-size: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #07506c;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+footer small {
+    font-size: 10px;
+}
+ 
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .places-container,
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place-card,
+    .event-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .stats-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
