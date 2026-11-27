@@ -1,0 +1,289 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.NET Developer Roadmap</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #F4F5F7;
+      color: #1E293B;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: #1E293B;
+      color: #FFFFFF;
+      padding: 36px 20px 26px;
+      text-align: center;
+    }
+
+    .header-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .header-tagline {
+      font-size: 16px;
+      color: #F1F5F9;
+    }
+
+    .main-content {
+      flex: 1;
+      width: 100%;
+      max-width: 1830px;
+      margin: 0 auto;
+      padding: 30px 95px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 14px;
+      padding: 26px 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-heading {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1E293B;
+      margin-bottom: 16px;
+    }
+
+    .roadmap-list {
+      padding-left: 34px;
+    }
+
+    .roadmap-item {
+      font-size: 16px;
+      padding: 7px 0 7px 6px;
+      margin-bottom: 4px;
+    }
+
+    .tech-list {
+      padding-left: 20px;
+    }
+
+    .tech-category {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .tech-sublist {
+      list-style-type: circle;
+      padding-left: 24px;
+    }
+
+    .tech-subitem {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .guide-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .guide-term {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1E293B;
+      padding: 2px 0;
+    }
+
+    .guide-desc {
+      font-size: 16px;
+      color: #475569;
+      padding: 5px 0 5px 10px;
+    }
+
+    .box {
+      background-color: #FFFFFF;
+      border: 2px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 10px 25px 30px;
+      min-height: 360px;
+    }
+
+    .box-legend {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1E293B;
+      padding: 0 12px;
+    }
+
+    .goals-list {
+      padding: 22px 0 0 34px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .goal-item {
+      font-size: 16px;
+      padding-left: 4px;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .skill-item {
+      background-color: #F4F5F7;
+      border-radius: 6px;
+      padding: 10px 10px;
+      font-size: 16px;
+    }
+
+    .footer {
+      background-color: #1E293B;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .main-content {
+        padding: 20px 14px;
+      }
+
+      .row {
+        grid-template-columns: 1fr;
+      }
+
+      .header-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header-title">🚀 My .NET Developer Roadmap</h1>
+    <p class="header-tagline">Learn → Practice → Build → Become a Developer</p>
+  </header>
+
+  <main class="main-content">
+
+    <div class="row">
+      <section class="card">
+        <h2 class="card-heading">📚 Learning Roadmap</h2>
+        <ol class="roadmap-list">
+          <li class="roadmap-item">Learn C# Basics</li>
+          <li class="roadmap-item">Master OOP Concepts</li>
+          <li class="roadmap-item">Learn Collections</li>
+          <li class="roadmap-item">Learn Exception Handling</li>
+          <li class="roadmap-item">Learn ADO.NET</li>
+          <li class="roadmap-item">Learn SQL</li>
+          <li class="roadmap-item">Build Projects</li>
+          <li class="roadmap-item">Practice Interview Questions</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2 class="card-heading">🛠️ Technologies to Learn</h2>
+        <ul class="tech-list">
+          <li class="tech-category">Programming
+            <ul class="tech-sublist">
+              <li class="tech-subitem">C#</li>
+              <li class="tech-subitem">Python</li>
+            </ul>
+          </li>
+          <li class="tech-category">Database
+            <ul class="tech-sublist">
+              <li class="tech-subitem">SQL</li>
+              <li class="tech-subitem">SQL Server</li>
+            </ul>
+          </li>
+          <li class="tech-category">Tools
+            <ul class="tech-sublist">
+              <li class="tech-subitem">Git</li>
+              <li class="tech-subitem">GitHub</li>
+            </ul>
+          </li>
+          <li class="tech-category">Web
+            <ul class="tech-sublist">
+              <li class="tech-subitem">HTML</li>
+              <li class="tech-subitem">CSS</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2 class="card-heading">📖 Technology Guide</h2>
+      <dl class="guide-list">
+        <dt class="guide-term">C#</dt>
+        <dd class="guide-desc">A programming language commonly used for building .NET applications.</dd>
+        <dt class="guide-term">SQL</dt>
+        <dd class="guide-desc">A language used to communicate with databases.</dd>
+        <dt class="guide-term">Git</dt>
+        <dd class="guide-desc">A version control system used to track code changes.</dd>
+        <dt class="guide-term">GitHub</dt>
+        <dd class="guide-desc">A platform used to store and collaborate on code.</dd>
+        <dt class="guide-term">HTML</dt>
+        <dd class="guide-desc">A markup language used to create the structure of web pages.</dd>
+        <dt class="guide-term">CSS</dt>
+        <dd class="guide-desc">A stylesheet language used to design web pages.</dd>
+      </dl>
+    </section>
+
+    <div class="row">
+      <fieldset class="box">
+        <legend class="box-legend">🎯 My Learning Goals</legend>
+        <ul class="goals-list">
+          <li class="goal-item">Complete C# and .NET Basics</li>
+          <li class="goal-item">Solve 100 Coding Problems</li>
+          <li class="goal-item">Build 3 Projects</li>
+          <li class="goal-item">Learn SQL Server</li>
+          <li class="goal-item">Create GitHub Portfolio</li>
+          <li class="goal-item">Prepare for .NET Interviews</li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="box">
+        <legend class="box-legend">💡 My Skill Level</legend>
+        <ul class="skills-list">
+          <li class="skill-item">C# ⭐⭐⭐⭐⭐</li>
+          <li class="skill-item">SQL ⭐⭐⭐⭐</li>
+          <li class="skill-item">HTML ⭐⭐⭐⭐</li>
+          <li class="skill-item">CSS ⭐⭐⭐</li>
+          <li class="skill-item">Git ⭐⭐⭐</li>
+        </ul>
+      </fieldset>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    🚀 Keep Learning • Keep Practicing • Keep Building
+  </footer>
+
+</body>
+</html>
